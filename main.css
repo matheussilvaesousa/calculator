@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html,
+main {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #fefefe;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#buttons-container {
+  background-color: #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #ccc;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "display display display display"
+    "ac invert percentage obelus"
+    "seven eight nine times"
+    "four five six minus"
+    "one two three plus"
+    "dot zero equals plus";
+  height: 600px;
+  width: 500px;
+  padding: 20px 15px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.button {
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 1px 0px 5px #bbb;
+  cursor: pointer;
+  display: flex;
+  font-family: "Old Standard TT", serif;
+  font-size: 55px;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+}
+
+#display {
+  background-color: #fefefe;
+  border-radius: 10px 10px 3px 3px;
+  display: flex;
+  padding: 20px 20px 10px 20px;
+  font-family: "Old Standard TT", serif;
+  font-size: 75px;
+  font-weight: 400;
+  justify-content: end;
+  align-items: flex-end;
+  grid-area: display;
+}
+
+#ac,
+#percentage {
+  font-size: 50px;
+}
+
+#invert {
+  font-size: 40px;
+  letter-spacing: -8px;
+}
+
+#ac,
+#invert,
+#percentage,
+#divide,
+#multiply,
+#add,
+#subtract,
+#dot {
+  background-color: #ddd;
+}
+
+#add {
+  grid-area: plus;
+}
+
+#equals {
+  background-color: rgb(255, 134, 35);
+}

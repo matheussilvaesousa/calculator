@@ -63,6 +63,12 @@ function solve() {
     case "add":
       currFunction = add;
       break;
+    default:
+      return;
+  }
+  if (currFunction === divide && currDisplay === "0") {
+    display.textContent = "BW0K3N";
+    return;
   }
   currDisplay = operate(
     currFunction,

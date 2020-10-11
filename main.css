@@ -21,8 +21,9 @@ main {
 
 #buttons-container {
   background-color: #ccc;
-  border-radius: 10px;
-  box-shadow: 0 0 5px #ccc;
+  border-radius: 20px;
+  box-shadow: -13px 11px #aaa, -10px 8px #aaa, -7px 5px #aaa, -4px 3px #aaa,
+    -1px 1px #aaa, -13px 11px 5px #bbb;
   display: grid;
   column-gap: 10px;
   row-gap: 10px;
@@ -45,7 +46,7 @@ main {
 .button {
   background-color: #eee;
   border-radius: 10px;
-  box-shadow: 1px 0px 5px #bbb;
+  box-shadow: -1px 1px #aaa, -2px 2px #aaa, -3px 3px #aaa, -4px 4px #aaa;
   cursor: pointer;
   display: flex;
   font-family: "Old Standard TT", serif;
@@ -53,12 +54,24 @@ main {
   font-weight: 400;
   justify-content: center;
   align-items: center;
+  user-select: none;
+}
+
+.button:active {
+  box-shadow: none;
+  position: relative;
+  top: 3px;
+  right: 3px;
 }
 
 #display {
-  background-color: #fefefe;
-  border-radius: 10px 10px 3px 3px;
+  background-color: #eee;
+  border-top: 7px solid #aaa;
+  border-right: 8px solid #aaa;
+  border-radius: 16px 20px 10px 10px;
+  text-shadow: -3px 3px 2px #bbb;
   display: flex;
+  flex-direction: row-reverse;
   padding: 20px 20px 10px 20px;
   font-family: "Old Standard TT", serif;
   font-size: 75px;
@@ -66,6 +79,7 @@ main {
   justify-content: end;
   align-items: flex-end;
   grid-area: display;
+  width: 100%;
 }
 
 #ac,
@@ -94,5 +108,5 @@ main {
 }
 
 #equals {
-  background-color: rgb(255, 134, 35);
+  background-color: #ff943d;
 }

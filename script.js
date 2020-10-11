@@ -76,6 +76,7 @@ function solve() {
     Number(currDisplay)
   ).toString();
   secondNumber = false;
+  currOperator = "";
   updateDisplay();
 }
 

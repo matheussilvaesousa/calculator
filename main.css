@@ -66,8 +66,8 @@ main {
 
 #display {
   background-color: #eee;
-  border-top: 7px solid #aaa;
-  border-right: 8px solid #aaa;
+  border-top: 7px solid #b6b6b6;
+  border-right: 8px solid #b6b6b6;
   border-radius: 16px 20px 10px 10px;
   text-shadow: -3px 3px 2px #bbb;
   display: flex;
